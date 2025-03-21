@@ -8,7 +8,7 @@
     --title: #4F21CE;
     --subtitle: #4F33A5;
     --links: #9e8ae0;
-    --links2: #6c42ec;
+    --links2: #8261e6;
 }
 
 *{
@@ -32,6 +32,7 @@ main{
     max-width: 1000px;
     margin: auto;
 }
+
 h1{
     color: var(--title);
 }
@@ -61,6 +62,10 @@ footer{
 
 }
 
+i{
+    inline-size: 30px;
+}
+
 .hall{
     margin-bottom: 50px;
     padding: 30px;
@@ -80,9 +85,9 @@ footer{
     color: var(--font);
     font-size: 2.0em;
 }
-.hall button{
+.hall  button{
     background-color: var(--links2);
-    border-radius: 30px;
+    border-radius: 10px ;
     color: #040214;
     padding: 8px;
     margin: 10px;
@@ -90,7 +95,7 @@ footer{
     box-shadow: 1px 1px 3px #9e8ae033;
     font-size: 16px;
 }
-.hall button:hover{
+.hall  button:hover{
     background-color: var(--links);
     box-shadow: 1px 1px 3px #9e8ae028;
 }
@@ -137,7 +142,7 @@ footer{
 
 .skills > button{
     background-color: var(--bg2);
-    border-radius: 12px 10px;
+    border-radius: 10px;
     border: 1px var(--subtitle) solid;
     box-shadow: 1px 1px 5px #4f33a521;
     padding: 20px;
@@ -156,36 +161,80 @@ footer{
     min-width: 300px;
     max-width: 800px;
     margin: auto;
+    padding-top: 40px;
 }
 
-.projects h1{
+.projects > h1{
     text-align: center;
 }
 
-.projects p{
+.projects > p{
     font-size: 20px;
 }
 
-.contact{
+.projects > a{
+    text-decoration: none;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    color: var(--font2);
+}
+
+.projects > a:hover{
+    text-shadow: 1px 1px 3px#6d42ec6b;
+}
+
+.contacts{
     min-width: 300px;
     max-width: 800px;
     margin: auto;
 }
 
-.contacts h1{
+.contacts > h1{
     text-align: center;
     padding-top: 30px;
 }
 
-.contacts a{
-    margin: 10px;
+.contacts > a{
+    margin: 20px;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 3em;
 }
 
-.contacts a:hover{
+.contacts > a:hover{
     color: var(--links2);
     text-shadow: 1px 1px 10px #9e8ae00c;
+}
+
+#icons_contact{
+    display: flex;
+    justify-content: center;
+}
+
+/* #insta{
+    padding: 30px;
+    text-align: center;
+    float: right;
+} */
+#github{
+    padding: 30px;
+    text-align: center;
+    float: right;
+}
+#linkedin{
+    padding: 30px;
+    text-align: center;
+    float: right;
+}
+#email{
+    padding: 30px;
+    text-align: center;
+    float: right;
+}
+#tel{
+    padding: 30px;
+    text-align: center;
+    float: right;
 }
