@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root{
-    --bg: #160f30;
-    --bg2: #0b0a11;
+    --bg: #080613;
+    --bg2: #0b0b11;
     --font: rgb(210, 198, 221);
     --font2: rgb(161, 153, 172);
     --title: #4F21CE;
@@ -38,13 +38,13 @@ h1{
 }
 
 body{
-    background-image: linear-gradient(to right, #040214 80%, rgb(12, 8, 31) );
+    background-image: linear-gradient(to right, #080613 80%, rgb(10, 5, 27) );
     color: var(--font);
 }
 
 header{
     border-bottom: 1px #9e8ae0 solid;
-    background-image: linear-gradient(to right,#040214 80%, rgb(12, 8, 31) );
+    background-image: linear-gradient(to right, #080613 80%, rgb(10, 5, 27) );
     margin: auto;
     
 }
@@ -102,7 +102,7 @@ i{
 
 .about_me{
     background-color: var(--bg2);
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: justify;
     padding: 20px 30px;
     min-width: 300px;
@@ -125,36 +125,64 @@ i{
 
 
 .skills{
+    background-color: var(--bg2);
     padding: 20px;
-    border: 1px solid #9e8ae0;
     border-radius: 10px;
-    min-width: 300px;
-    max-width: 580px;
     margin: auto;
     margin-top: 50px;
 }
 
 .skills > h1{
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 35px;
 }
 
-.skills > button{
-    background-color: var(--bg2);
+.skills button{
+    background-color: var(--bg);
     border-radius: 10px;
-    border: 1px var(--subtitle) solid;
-    box-shadow: 1px 1px 5px #4f33a521;
+    border: 1.5px #0f0f18 solid;
     padding: 20px;
-    font-size: 20px;
-    color: var(--font);
-    margin: 30px;
-
+    font-size: 30px;
+    color: var(--links);
+    margin: 5px;
+    
 }
 
-.skills > button:hover{
-    border: 1px var(--links) solid;
-    box-shadow: 1px 1px 5px #9e8ae01e;
+.skills button:hover{
+    border: 1.5px var(--links) solid;
+    color: var(--links);
+    box-shadow: 1px 1px 2px #9e8ae04f;
+}
+
+#icon_skills{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+#html{
+    float: right;
+    padding: 10px;
+}
+
+#css{
+    float: right;
+    padding: 10px;
+}
+
+#java{
+    float: right;
+    padding: 10px;
+}
+
+#c{
+    float: right;
+    padding: 10px;
+}
+
+.fa-brands fa-html5{
+    background-color: #4F21CE;
 }
 
 .projects{
@@ -193,24 +221,32 @@ i{
 .contacts > h1{
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.contacts > a{
-    margin: 20px;
+.contacts a{
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
-    font-size: 3em;
+    font-size: 1.7em;
+    background-color: var(--bg2);
+    border-radius: 100px;
 }
 
-.contacts > a:hover{
+.contacts  a:hover{
     color: var(--links2);
     text-shadow: 1px 1px 10px #9e8ae00c;
+}
+
+.contacts p{
+    padding-top: 25px;
 }
 
 #icons_contact{
     display: flex;
     justify-content: center;
+    max-width: 800px;
+    min-width: 300px;
 }
 
 /* #insta{
