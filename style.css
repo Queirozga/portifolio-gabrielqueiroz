@@ -28,8 +28,6 @@ a:hover{
 }
 
 main{
-    min-width: 300px;
-    max-width: 1000px;
     margin: auto;
 }
 
@@ -50,9 +48,9 @@ header{
 }
 header > h1{
     color: var(--font);
-    font-size: 2.0em;
+    font-size: 2em;
     text-align: center;
-    margin: 10px;
+    padding: 10px;
 }
 
 footer{
@@ -73,17 +71,17 @@ i{
 
 .hall > p{
     color: var(--font2);
-    font-size: 1.2em;
+    font-size: 1.3em;
     
 }
 .hall > h1{
     display: block;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 .hall > h2{
     display: block;
     color: var(--font);
-    font-size: 2.0em;
+    font-size: 2.5em;
 }
 .hall  button{
     background-color: var(--links2);
@@ -192,15 +190,22 @@ i{
     padding-top: 40px;
 }
 
-.projects > h1{
+.projects h1{
     text-align: center;
 }
 
-.projects > p{
-    font-size: 20px;
+.projects h2{
+    text-align: center;
+    padding: 20px;
+    color: var(--links2);
 }
 
-.projects > a{
+.projects  p{
+    font-size: 20px;
+    color: var(--font2);
+}
+
+.projects  a{
     text-decoration: none;
     text-align: center;
     padding: 40px;
@@ -208,8 +213,28 @@ i{
     color: var(--font2);
 }
 
-.projects > a:hover{
+.projects  a:hover{
     text-shadow: 1px 1px 3px#6d42ec6b;
+}
+
+.pojects button{
+    color: var(--links);
+}
+
+#twp{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    max-width: 30px;
+    min-width: 300px;
+}
+
+#title_twp{
+    float: left;
+}
+
+#see{
+    float: left;
 }
 
 .contacts{
