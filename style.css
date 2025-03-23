@@ -1,8 +1,10 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
 
 :root{
-    --bg: #080613;
-    --bg2: #0b0b11;
+    --bg: #110e1d;
+    --bg2: #0c0c11;
     --font: rgb(210, 198, 221);
     --font2: rgb(161, 153, 172);
     --title: #4F21CE;
@@ -12,7 +14,10 @@
 }
 
 *{
-    font-family: Arial;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     margin: 0%;
     padding: 0%;
 }
@@ -33,16 +38,29 @@ main{
 
 h1{
     color: var(--title);
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+p{
+    font-size: 1.2em;
 }
 
 body{
-    background-image: linear-gradient(to right, #080613 80%, rgb(10, 5, 27) );
+    background-image: linear-gradient(to right, #110e1d 80%, #110f1a);
     color: var(--font);
 }
 
 header{
     border-bottom: 1px #9e8ae0 solid;
-    background-image: linear-gradient(to right, #080613 80%, rgb(10, 5, 27) );
+    background-image: linear-gradient(to right, #110e1d 80%, #110f1a );
     margin: auto;
     
 }
@@ -56,7 +74,8 @@ header > h1{
 footer{
     background-color: #030108;
     margin: 0%;
-    padding: 0%;
+    padding: 20px;
+    text-align: center;
 
 }
 
@@ -65,28 +84,39 @@ i{
 }
 
 .hall{
-    margin-bottom: 50px;
-    padding: 30px;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hall > p{
+#gabriel{
+    float: left;
+    padding-right: 200px;
+    padding-top: 200px;
+}
+
+#photo{
+    float: right;
+}
+
+.hall p{
     color: var(--font2);
     font-size: 1.3em;
-    
+    padding-bottom: 20px;
 }
-.hall > h1{
-    display: block;
-    font-size: 3em;
+.hall h1{
+    display: flex;
 }
-.hall > h2{
-    display: block;
+.hall h2{
+    display: flex;
     color: var(--font);
     font-size: 2.5em;
 }
-.hall  button{
+.hall button{
     background-color: var(--links2);
     border-radius: 10px ;
-    color: #040214;
+    color: #110e1d;
     padding: 8px;
     margin: 10px;
     border: none;
@@ -113,18 +143,22 @@ i{
 }
 
 .about_me > h1{
-    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
 .about_me > P{
-    padding: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 70px;
 }
 
 
 .skills{
     background-color: var(--bg2);
-    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     border-radius: 10px;
     margin: auto;
     margin-top: 50px;
@@ -133,15 +167,15 @@ i{
 .skills > h1{
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 70px;
 }
 
 .skills button{
-    background-color: var(--bg);
+    background-color: #110e1d;
     border-radius: 10px;
     border: 1.5px #0f0f18 solid;
-    padding: 20px;
-    font-size: 30px;
+    padding: 30px;
+    font-size: 35px;
     color: var(--links);
     margin: 5px;
     
@@ -179,30 +213,31 @@ i{
     padding: 10px;
 }
 
-.fa-brands fa-html5{
-    background-color: #4F21CE;
-}
-
 .projects{
     min-width: 300px;
     max-width: 800px;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 150px;
 }
 
 .projects h1{
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .projects h2{
     text-align: center;
     padding: 20px;
     color: var(--links2);
+    font-weight: 500;
 }
 
 .projects  p{
     font-size: 20px;
     color: var(--font2);
+    text-align: justify;
+    padding-bottom: 30px;
+    
 }
 
 .projects  a{
@@ -222,31 +257,45 @@ i{
 }
 
 #twp{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    max-width: 30px;
-    min-width: 300px;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 200px;
+    border: 2px var(--links) solid;
 }
 
 #title_twp{
-    float: left;
+    padding: 10px;
 }
 
-#see{
-    float: left;
+.see{
+    background-color: var(--bg1);
+    color: var(--links);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    border: var(--bg);
+    font-size: 1.2em;
+}
+
+.see:hover{
+    color: var(--links2);
+    text-decoration: underline;
 }
 
 .contacts{
     min-width: 300px;
     max-width: 800px;
     margin: auto;
+    padding-top: 150px;
+    padding-bottom: 200px;
 }
 
 .contacts > h1{
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
 }
 
 .contacts a{
