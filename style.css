@@ -250,17 +250,24 @@ i{
 .projects  a{
     text-decoration: none;
     text-align: center;
-    padding: 40px;
+    padding-top: 20px;
     font-size: 20px;
     color: var(--font2);
 }
 
 .projects  a:hover{
     text-shadow: 1px 1px 3px#6d42ec6b;
+    color: var(--links);
 }
 
-.pojects button{
-    color: var(--links);
+#cordel_pai{
+    padding-bottom: 20px;
+}
+
+#cordel{
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
 }
 
 #twp{
