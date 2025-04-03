@@ -12,20 +12,26 @@
         <h1>Portifólio</h1>
     </header>
     <main>
-        <div class="hall">
-            <section id="gabriel">
-            <h2>Olá, eu me chamo</h2>
-                <h1> Gabriel Queiroz!</h1>
-                <p>Auxiliar Administrativo</p>
-                <a href="downloads/CV - Gabriel Henrique Queiroz Silva.pdf" download="CV - Gabriel Queiroz" type="archive/pdf"  ><button>Baixar CV</button></a> <!--Download do cv-->
-                <a href="#contact"><button>Contatos</button></a>  <!--link pro final do site-->
+        <div class="container_hall">
+            <div class="hello">
+                <h2>Olá, eu me chamo</h2>
+                    <h1> Gabriel Queiroz!</h1>
+                    <p>Auxiliar Administrativo</p>
+                    <div class="buttons">
+                        <a href="downloads/CV - Gabriel Henrique Queiroz Silva.pdf" download="CV - Gabriel Queiroz" type="archive/pdf"  ><button class="cv">Baixar CV</button></a>
+                        <a href="#contact"><button  class="go_contacts">Contatos</button></a>
+                    </div>  <!--link pro final do site-->
+                </div>
+                    <!--<section class="photo">
+                        <img src="imagens/eu.jfif" alt="Foto de Gabriel Queiroz">-->
             </section>
-            <section id="photo"><img src="" alt="Foto de Gabriel Queiroz"> <!--Foto minha--></section>
         </div>
-        <div class="about_me">
-            <h1>Quem é esse cara?</h1>
-            <p>Estudante de Sistemas de Informação na Fundação Educacional de Fernandópolis, Auxiliar Administrativo na APAE de Fernandópolis. No momento estou focado em HTML CSS, porém sempre estou em busca de novos aprendizados nessa área.</p>
-        </div>
+        <section class="container_about_me">
+            <div class="about_me">
+                <h1>Quem é esse cara?</h1>
+                <p>Estudante de Sistemas de Informação na FEF, Auxiliar Administrativo na APAE de Fernandópolis e Estágiário na Easify. No momento estou focado em HTML, CSS e JavaScript porém sempre estou em busca de novos aprendizados nessa área.</p>
+            </div>
+        </section>
         <div class="skills">
             <h1>Skills (Ou quase)</h1>
             <section id="icon_skills">
@@ -55,8 +61,8 @@
         <div class="projects">
             <h1>Projetos</h1>
             <section id="twp">
-                <h2 id="title_twp">Cordel</h2>
-                <p id="text_twp"> Um cordel ("poema" nordestino) feito em HTML e CSS com responsividade básica e efeito parallax em fotos.</p>
+                <h2 id="title_cordel">Cordel</h2>
+                <p id="text_cordel"> Um cordel ("poema" nordestino) feito em HTML e CSS com responsividade básica e efeito parallax em fotos.</p>
                 <article id="cordel_pai">
                     <iframe id="cordel" src="https://queirozga.github.io/cordel/" frameborder="0" scrolling="no"></iframe>
                 </article>
@@ -66,31 +72,25 @@
         <div class="contacts">
             <h1 id="contact">Contatos</h1>
             <section id="icons_contact">
-                <!-- <article id="insta">
-                    <a href="https://www.instagram.com/gaqueiroz__?igsh=MWZoZm1iZ3FsMDdjbw%3D%3D&utm_source=qr" rel="external" target="_blank">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-                    <p>Instagram</p>
-                </article> -->
-                <article id="github">
+                <article class="github">
                     <a href="https://github.com/Queirozga" rel="author" target="_blank">
                         <i class="fa-brands fa-square-github"></i>
                     </a>
                     <p>Github</p>
                 </article>
-                <article id="linkedin">
+                <article class="linkedin">
                     <a href="https://www.linkedin.com/in/gabriel-henrique-queiroz-silva-12706b351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" rel="author" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                     <p>Linkedin</p>
                 </article>
-                <article id="email">
+                <article class="email">
                     <a href="mailto:bielhenri1302@gmail.com" rel="author" target="_blank">
                         <i class="fa-solid fa-square-envelope"></i>
                     </a>
                     <p>E-mail</p>
                 </article>
-                <article id="tel">
+                <article class="tel">
                     <a href="https://api.whatsapp.com/send?phone=5517988092610" rel="author" target="_blank">
                         <i class="fa-solid fa-square-phone"></i>
                     </a>

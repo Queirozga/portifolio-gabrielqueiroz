@@ -4,7 +4,7 @@
 
 :root{
     --bg: #110e1d;
-    --bg2: #030108;
+    --bg2: #16161680;
     --font: rgb(210, 198, 221);
     --font2: rgb(161, 153, 172);
     --title: #4F21CE;
@@ -33,7 +33,7 @@ a:hover{
 }
 
 main{
-    margin: auto;
+    opacity: unset; /*só de marola*/
 }
 
 h1{
@@ -62,13 +62,12 @@ header{
     border-bottom: 1px #9e8ae0 solid;
     background-image: linear-gradient(to right, #110e1d 80%, #110f1a );
     margin: auto;
-    
 }
 header > h1{
     color: var(--font);
     font-size: 2em;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 footer{
@@ -83,92 +82,118 @@ i{
     inline-size: 30px;
 }
 
-.hall{
-    padding-bottom: 300px;
+.container_hall{
+    height: 450px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-bottom: 180px;
 }
 
-#gabriel{
-    float: left;
-    padding-right: 200px;
-    padding-top: 200px;
+.hello{
+    width: 397px;
 }
 
-#photo{
-    float: right;
-}
-
-.hall p{
+/*.photo{
+    img{
+        width: 200px;
+        height: 200px;
+    }
+} */
+.container_hall p{
     color: var(--font2);
-    font-size: 1.3em;
-    padding-bottom: 20px;
+    font-size: 1.4em;
 }
-.hall h1{
-    display: flex;
+.container_hall h1{
+    font-size: 3.5em;
 }
-.hall h2{
-    display: flex;
+.container_hall h2{
     color: var(--font);
-    font-size: 2.5em;
+    font-size: 3em;
 }
-.hall button{
+.buttons{
+    display: flex;
+    padding-top: 20px;
+    padding-right: 10px;
+    gap: 30px;
+}
+.container_hall button{
     background-color: var(--links2);
     border-radius: 10px ;
     color: #110e1d;
-    padding: 8px;
-    margin: 10px;
-    border: none;
+    padding: 10px 20px;
+    border: 2px solid var(--links2);
     box-shadow: 1px 1px 3px #9e8ae033;
-    font-size: 16px;
+    font-size: 1em;
 }
-.hall  button:hover{
+.container_hall button:hover{
     background-color: var(--links);
+    border: 2px solid var(--links);
     box-shadow: 1px 1px 3px #9e8ae028;
 }
 
+.container_hall .cv{
+    background-color: var(--bg);
+    border: 2px solid var(--links2);
+    color: var(--font);
+}
+
+.container_hall .cv:hover{
+    background-color: var(--links2);
+    border: 2px solid var(--links2);
+    color: var(--bg);
+    transition: background-color 0.5s;
+}
+
+
+.container_about_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .about_me{
     background-color: var(--bg2);
     border-radius: 10px;
     text-align: justify;
-    padding: 20px 30px;
+    padding: 20px 0px;
     min-width: 300px;
-    max-width: 650px;
+    max-width: 550px;
     min-height: 250px;
-    max-height: 500px;
-    margin: auto;
+    max-height: 650px;
     font-size: 20px;
-    box-shadow: 3px 3px 10px #0301088e;
+    border: 2px solid rgba(134, 134, 134, 0.267);
 }
 
 .about_me > h1{
-    padding-top: 30px;
     text-align: center;
-
 }
 
 .about_me > P{
-    padding-top: 50px;
+    width: 400px;
+    padding-top: 30px;
     padding-left: 70px;
     padding-right: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 
 .skills{
     background-color: var(--bg2);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 10px;
-    margin: auto;
-    margin-top: 50px;
+    margin-top: 60px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.205);
 }
 
 .skills > h1{
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 /*.skills p{
     visibility: hidden;
@@ -178,46 +203,42 @@ i{
 }*/
 
 .skills button{
-    background-color: #110e1d;
+    background-color: var(--bg);
     border-radius: 10px;
-    border: 1.5px #0f0f18 solid;
     padding: 30px;
     font-size: 35px;
     color: var(--links);
-    margin: 5px;
-    
+    border: 2px solid rgba(134, 134, 134, 0.11);
 }
 
 .skills button:hover{
-    border: 1.5px var(--links) solid;
+    border: 2px var(--links) solid;
     color: var(--links);
-    box-shadow: 1px 1px 2px #9e8ae04f;
+    transition: border .3s;
 }
 
 #icon_skills{
     display: flex;
     justify-content: center;
-    padding-bottom: 60px;
+    gap: 20px;
+    padding-bottom: 40px;
 }
 
 #html{
     float: right;
-    padding: 10px;
+    
 }
 
 #css{
     float: right;
-    padding: 10px;
 }
 
 #java{
     float: right;
-    padding: 10px;
 }
 
 #c{
     float: right;
-    padding: 10px;
 }
 
 .projects{
@@ -271,15 +292,17 @@ i{
 }
 
 #twp{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 30px;
     padding-bottom: 30px;
     margin: auto;
-    width: 200px;
+    width: 300px;
     border: 2px var(--links) solid;
 }
 
-#title_twp{
+#title_cordel{
     padding: 10px;
 }
 
@@ -299,9 +322,6 @@ i{
 }
 
 .contacts{
-    min-width: 300px;
-    max-width: 800px;
-    margin: auto;
     padding-top: 150px;
     padding-bottom: 200px;
 }
@@ -316,7 +336,7 @@ i{
     text-align: center;
     padding: 15px;
     text-decoration: none;
-    font-size: 1.7em;
+    font-size: 1.5em;
     background-color: var(--bg2);
     border-radius: 100px;
 }
@@ -324,6 +344,7 @@ i{
 .contacts  a:hover{
     color: var(--links2);
     text-shadow: 1px 1px 10px #9e8ae00c;
+    transition: color .3s;
 }
 
 .contacts p{
@@ -333,32 +354,24 @@ i{
 #icons_contact{
     display: flex;
     justify-content: center;
-    max-width: 800px;
-    min-width: 300px;
+    align-items: center;
+    gap: 60px;
 }
 
-/* #insta{
-    padding: 30px;
-    text-align: center;
-    float: right;
-} */
-#github{
-    padding: 30px;
+.github{
     text-align: center;
     float: right;
 }
-#linkedin{
-    padding: 30px;
+.linkedin{
     text-align: center;
     float: right;
 }
-#email{
-    padding: 30px;
+.email{
     text-align: center;
     float: right;
 }
-#tel{
-    padding: 30px;
+.tel{
     text-align: center;
     float: right;
 }
+
