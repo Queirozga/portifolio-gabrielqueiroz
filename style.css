@@ -110,16 +110,19 @@ i{
 }
 .container_hall h1{
     font-size: 3.5em;
+    flex: 0 0 auto;
 }
 .container_hall h2{
     color: var(--font);
     font-size: 3em;
+    flex: 0 0 auto;
 }
 .buttons{
     display: flex;
     padding-top: 20px;
     padding-right: 10px;
     gap: 30px;
+    flex: 0 0 auto;
 }
 .container_hall button{
     background-color: var(--links2);
@@ -181,6 +184,10 @@ i{
 
 
 .skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: var(--bg2);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -194,18 +201,13 @@ i{
     padding-top: 20px;
     padding-bottom: 50px;
 }
-/*.skills p{
-    visibility: hidden;
-}
-#html:hover .html_description {
-    visibility: visible;
-}*/
 
 .skills button{
     background-color: var(--bg);
     border-radius: 10px;
-    padding: 30px;
-    font-size: 35px;
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
     color: var(--links);
     border: 2px solid rgba(134, 134, 134, 0.11);
 }
@@ -218,27 +220,31 @@ i{
 
 #icon_skills{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    background-color: white;
 }
-
-#html{
-    float: right;
-    
+/* 
+#htm{
+    flex: 0 1 auto;
 }
 
 #css{
-    float: right;
+    flex: 0 1 auto;
 }
 
 #java{
-    float: right;
+    flex: 0 1 auto;
 }
 
 #c{
-    float: right;
-}
+    flex: 0 1 auto;
+} */
 
 .projects{
     min-width: 300px;
