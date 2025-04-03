@@ -127,13 +127,14 @@ i{
     color: #110e1d;
     padding: 10px 20px;
     border: 2px solid var(--links2);
-    box-shadow: 1px 1px 3px #9e8ae033;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
     font-size: 1em;
 }
 .container_hall button:hover{
     background-color: var(--links);
     border: 2px solid var(--links);
-    box-shadow: 1px 1px 3px #9e8ae028;
+    box-shadow: none;
+    transition: background-color .2s ease-in-out, border .2s ease-in-out;
 }
 
 .container_hall .cv{
@@ -146,7 +147,7 @@ i{
     background-color: var(--links2);
     border: 2px solid var(--links2);
     color: var(--bg);
-    transition: background-color 0.5s;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
 
