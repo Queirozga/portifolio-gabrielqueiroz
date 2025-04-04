@@ -152,10 +152,8 @@ i{
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 .about_me{
-    max-width: 800px;
-    height: 500px;
     display: flex;
-    flex-flow: column wrap ;
+    flex-flow: column nowrap ;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -163,24 +161,22 @@ i{
 }
 .container_about_me{
     padding: 50px;
-    font-size: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 2px solid var(--border);
     background: var(--bg2);
-    margin: auto;
     width: 500px;
 }
-.about_me_title{
+.container_about_me p{
     text-align: justify;
+    color: var(--font);
+    font-size: 24px;
 }
+.container_about_me h1{
+    text-align: center;
+    width: 400px;
+    padding-bottom: 35px;
 
-.about_me_text{
-    flex-grow: 0;
-    flex-shrink: 0;
-    margin: 20px;
-    text-align: justify;
 }
-
 .skills{
     background-color: var(--bg2);
     padding-top: 10px;
