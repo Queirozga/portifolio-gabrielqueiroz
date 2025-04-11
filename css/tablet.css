@@ -231,10 +231,11 @@
     }
 
     
-footer{
-    background-color: #030108;
-    margin: 0%;
-    padding: 10px;
-    text-align: center;
-    font-size: 12px;
-}
+    footer{
+        background-color: #030108;
+        margin: 0%;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+    }
+}    
