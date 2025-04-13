@@ -12,4 +12,4 @@
 
 ##Links
 Link de acesso ao site -> https://queirozga.github.io/portifolio-gabrielqueiroz/
-Link de clone -> https://github.com/Queirozga/cordel.git
+Link de clone -> [https://github.com/Queirozga/cordel.git](https://github.com/Queirozga/portifolio-gabrielqueiroz.git)
