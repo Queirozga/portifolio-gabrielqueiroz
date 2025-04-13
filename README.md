@@ -1,5 +1,15 @@
-Portifolio - trabalho semestral FEF
+#Meu Portifolio 
 
-Tecnologias - HTML | CSS
+##Objetivo
+- trabalho semestral de Design de interface FEF
 
-link de acesso ao site -> https://queirozga.github.io/portifolio-gabrielqueiroz/
+##Descrição
+- Aplicação básica de HTML e CSS com elementos de transitions e Flexbox
+
+##Técnologias
+- HTML
+- CSS
+
+##Links
+Link de acesso ao site -> https://queirozga.github.io/portifolio-gabrielqueiroz/
+Link de clone -> https://github.com/Queirozga/cordel.git
