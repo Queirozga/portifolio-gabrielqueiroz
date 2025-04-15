@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -31,17 +32,20 @@
                 <div class="about_me">
                     <h1>Quem é esse cara?</h1>
                     <p>
-                        Estudante de Sistemas de Informação na FEF,
+                        Estudante de Sistemas de Informação na Fundação Educacional de Fernandópolis,
                         Auxiliar Administrativo na APAE de Fernandópolis
-                        e Estágiário na Easify. No momento estou focado
-                        em HTML, CSS e JavaScript porém sempre estou em
+                        e Estágiário no Centro Cultural América. No momento estou focado
+                        em JavaScript, HTML e CSS, porém sempre estou em
                         busca de novos aprendizados nessa área.
                     </p>
                 </div>
             </section>
         <div class="skills">
-            <h1>Skills (Ou quase)</h1>
+            <h1>Skills</h1>
             <section id="icon_skills">
+                <button id="icons">
+                    <i class="fa-brands fa-js"></i>
+                </button>
                 <button  id="icons">
                     <i class="fa-brands fa-html5"></i>
                 </button>
@@ -52,20 +56,30 @@
                     <i class="fa-brands fa-java"></i>
                 </button>
                 <button id="icons">
-                    <i class="fa-brands fa-c"></i>
+                    <i class="devicon-c-plain"></i>
                 </button>
             </section>
         </div>
-        <div class="projects">
+        <div class="projects_container">
             <h1>Projetos</h1>
-            <section id="cordel_box">
-                <h2 id="title_cordel">Cordel</h2>
-                <p id="text_cordel"> Um cordel ("poema" nordestino) feito em HTML e CSS com responsividade básica e efeito parallax em fotos.</p>
-                <article id="cordel_pai">
-                    <iframe id="cordel" src="https://queirozga.github.io/cordel/" frameborder="0" scrolling="no"></iframe>
-                </article>
-                <a href="https://queirozga.github.io/cordel/" target="_blank"><button>Ver projeto</button></a>
-            </section>
+            <div class="projects_items">
+                <section id="item_box">
+                    <h2 id="item_title">Relógio</h2>
+                    <p id="item_text"> Um relógio que muda a imagem de fundo baseado no período do dia. Feito com JavaScript, HTML e CSS.</p>
+                    <article id="iframe_box">
+                        <iframe id="iframe" src="https://queirozga.github.io/projeto-horario/" frameborder="0" scrolling="no"></iframe>
+                    </article>
+                    <a href="https://queirozga.github.io/projeto-horario/" target="_blank"><button>Vizualizar</button></a>
+                </section>
+                <section id="item_box">
+                    <h2 id="item_title">Cordel</h2>
+                    <p id="item_text"> Um cordel ("poema" nordestino) feito em HTML e CSS com responsividade básica e efeito parallax em fotos.</p>
+                    <article id="iframe_box">
+                        <iframe id="iframe" src="https://queirozga.github.io/cordel/" frameborder="0" scrolling="no"></iframe>
+                    </article>
+                    <a href="https://queirozga.github.io/cordel/" target="_blank"><button>Vizualizar</button></a>
+                </section>
+            </div>
         </div>
         <div class="contacts">
             <h1 id="contact">Contatos</h1>
